@@ -9,34 +9,44 @@
    <body>
       <main>
          <div class="left">
-     <img src="./QuizImg.jpeg" alt="">
+            <img src="./QuizImg.jpeg" alt="" />
          </div>
-         <div class="rightDiv">
-            <div class="right">
-               <button class="btn">Quiz</button>
-               <hr />
-               <!-- <div> -->
-                  <p class="topP"  id="questions">
-                    
-                  </p>
-               <!-- </div> -->
+         <div class="body">
+            <div class="loader"></div>
+            <div class="scoreDiv">
+               <h1>Your Score</h1>
+               <h1 id="score"></h1>
+            </div>
+            <div class="rightDiv">
+               <div class="right">
+                  <button class="btn">Quiz</button>
+                  <hr />
+                  <!-- <div> -->
+                  <p class="topP" id="questions"></p>
+                  <!-- </div> -->
+                  <div class="answersDiv">
+                     <div class="answers">
+                        <button class="button" id="option1"></button>
+                        <button class="button" id="option2"></button>
+                     </div>
+                     <div class="answers">
+                        <button class="button" id="option3"></button>
+                        <button class="button" id="option4"></button>
+                     </div>
+                  </div>
 
-               <div class="answers">
-                  <button class="btn1" id="option1"></button>
-                  <button class="btn1" id="option2"></button>
-               </div>
-               <div class="answers">
-                  <button class="btn1" id="option3"></button>
-                  <button class="btn1" id="option4"></button>
-               </div>
-
-               <hr />
-               <div class="belowPdiv">
-                  <p class="belowP">Question 1 of 5</p>
+                  <hr />
+                  <div class="belowPdiv">
+                     <p class="belowP" id="progress">Question 1 of 20</p>
+                  </div>
                </div>
             </div>
          </div>
       </main>
+
+      <audio id="right" src="./success.mp3"></audio>
+      <audio id="wrong" src="./error.mp3"></audio>
+      <audio id="endgame" src="./end_quiz.mp3"></audio>
 
       <script src="index.js"></script>
    </body>
